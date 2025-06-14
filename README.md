@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# Life of Pablo – Project Status & Dev Plan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Life of Pablo project! This page tracks the current status, development plan, and key milestones for the app. For more details, see the [original README](./README.md).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚦 Project Status
 
-## Expanding the ESLint configuration
+- **Sidebar & Navigation:**
+  - [x] Pixel-perfect sidebar layout, grouping, icons, colors, spacing, and stat formatting
+  - [x] Sidebar collapse/expand functionality (button in content area)
+  - [x] Page switching and active tab highlighting
+  - [x] Logo only in sidebar
+- **Page Components:**
+  - [x] Placeholder components for all sidebar entries
+  - [ ] Implement full content for each page
+- **Styling:**
+  - [x] Tahoma font, FontAwesome icons, compact sizing
+  - [x] Footer placement and underlines
+- **Repository:**
+  - [x] GitHub repo initialized, code pushed (excluding node_modules)
+  - [x] Status/dev plan page (this file)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🗺️ Roadmap
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### MVP (Minimum Viable Product)
+- [x] Sidebar and navigation UI (pixel-perfect)
+- [x] Page switching logic
+- [x] Sidebar collapse/expand (button in content area)
+- [x] GitHub setup and push
+- [ ] Implement core page content (Overview, City Map, Growing, etc.)
+- [ ] Add real data/stat integration
+- [ ] Responsive/mobile layout
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Future Features
+- [ ] User authentication
+- [ ] Admin panel functionality
+- [ ] Achievements and stats tracking
+- [ ] Market and inventory systems
+- [ ] Research and lab mechanics
+- [ ] Gang and property management
+- [ ] Vehicle system
+- [ ] Settings and customization
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🛠️ Development Plan
+
+1. **UI Polish:**
+   - Finalize all sidebar and navigation details
+   - Ensure pixel-perfect match to design
+2. **Page Content:**
+   - Build out each main page (Overview, City Map, etc.)
+   - Connect to backend/data as needed
+3. **Core Features:**
+   - Implement gameplay/stat logic
+   - Add interactivity to pages
+4. **Testing & QA:**
+   - Manual and automated testing
+   - Accessibility and performance checks
+5. **Documentation:**
+   - Keep README and status page up to date
+   - Add usage and contribution guides
+
+---
+
+## 📅 Milestones
+
+- **Sidebar/Navigation Complete:** June 2025
+- **MVP Page Content:** July 2025
+- **Core Gameplay Features:** August 2025
+- **Beta Release:** September 2025
+
+---
+
+## 👨‍💻 Contributors
+- [fame0528](https://github.com/fame0528)
+
+---
+
+_Last updated: June 14, 2025_
