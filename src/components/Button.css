@@ -1,0 +1,47 @@
+/* === Button.css ===
+ * Created: 2025-06-14
+ * Purpose: Styles for the reusable Button component
+ * Key Exports: N/A (CSS only)
+ * Interactions: Used by Button.tsx
+ * Notes: Uses CSS variables for theming
+ */
+
+.custom-btn {
+  background: var(--color-bg-panel);
+  color: var(--color-accent);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border var(--transition);
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.custom-btn:disabled {
+  background: var(--color-disabled);
+  color: var(--color-text-muted);
+  border-color: var(--color-border-muted);
+  cursor: not-allowed;
+}
+
+.custom-btn:hover:not(:disabled),
+.custom-btn:focus-visible:not(:disabled) {
+  background: var(--color-accent);
+  color: var(--color-bg-panel);
+  border-color: var(--color-accent-2);
+}
+
+/* === Button.css ===
+ * Updated: 2025-06-14
+ * Summary: Styles for Button component, themed via CSS variables
+ * Key Components: N/A
+ * Dependencies: theme.css
+ * Version History:
+ *   v1.0 - Initial release
+ * Notes: Extend for more variants as needed
+ */

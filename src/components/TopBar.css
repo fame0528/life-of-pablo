@@ -1,0 +1,82 @@
+/* === TopBar.css ===
+ * Created: 2025-06-14
+ * Purpose: Styles for the TopBar component
+ * Key Exports: N/A (CSS only)
+ * Interactions: Used by TopBar.tsx
+ * Notes: Uses CSS variables for theming
+ */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg-panel);
+  border-bottom: 2px solid var(--color-border);
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-main);
+  color: var(--color-accent);
+}
+
+.topbar__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar__user {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.topbar__signout {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.topbar__signout:hover,
+.topbar__signout:focus-visible {
+  background: var(--color-accent);
+  color: var(--color-bg-panel);
+}
+
+.topbar__theme-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-accent-2);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: color var(--transition);
+}
+
+.topbar__theme-btn:hover,
+.topbar__theme-btn:focus-visible {
+  color: var(--color-accent);
+}
+
+/* === TopBar.css ===
+ * Updated: 2025-06-14
+ * Summary: Styles for TopBar component, themed via CSS variables
+ * Key Components: N/A
+ * Dependencies: theme.css
+ * Version History:
+ *   v1.0 - Initial release
+ * Notes: Extend for more variants as needed
+ */

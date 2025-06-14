@@ -1,0 +1,122 @@
+/* === CultivationLab.css ===
+ * Created: 2025-06-14
+ * Purpose: Styles for the CultivationLab and sub-panels
+ * Key Exports: N/A (CSS only)
+ * Interactions: Used by CultivationLab.tsx and subcomponents
+ * Notes: Uses CSS variables for theming
+ */
+
+.cultivation-lab {
+  background: var(--color-bg-panel);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 2rem 2rem 1.5rem 2rem;
+  margin: 2rem 0;
+  color: var(--color-text);
+  font-family: var(--font-main);
+  box-shadow: 0 0 16px 0 rgba(30,230,255,0.08);
+}
+
+.cultivation-lab__title {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.env-panel, .equipment-panel, .strain-selector, .active-plants {
+  margin-bottom: 1.5rem;
+}
+
+.env-panel__title, .equipment-panel__title, .strain-selector__title, .active-plants__title {
+  color: var(--color-accent-2);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.env-panel__stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.env-panel__stat {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+  padding: 1rem 1.5rem;
+  min-width: 140px;
+  border: 1.5px solid var(--color-border-muted);
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.env-panel__value {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+.equipment-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.equipment-panel__item {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-border-muted);
+  padding: 1rem 1.5rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.equipment-panel__item .owned {
+  color: var(--color-success);
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.strain-selector__dropdown {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+.strain-selector__error {
+  color: var(--color-danger);
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.active-plants__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-success);
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+.active-plants__hint {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+/* === CultivationLab.css ===
+ * Updated: 2025-06-14
+ * Summary: Styles for CultivationLab and sub-panels, themed via CSS variables
+ * Key Components: N/A
+ * Dependencies: theme.css
+ * Version History:
+ *   v1.0 - Initial release
+ * Notes: Extend for more variants as needed
+ */

@@ -1,0 +1,62 @@
+/* === theme.css ===
+ * Created: 2025-06-14
+ * Purpose: Defines CSS variables for dark and light themes, used globally via ThemeContext
+ * Key Exports: N/A (CSS only)
+ * Interactions: Used by all components for consistent theming
+ * Notes: Add or adjust variables for new themes/colors as needed
+ */
+
+:root {
+  --color-bg: #10141a;
+  --color-bg-panel: #181f29;
+  --color-border: #1ee6ff;
+  --color-border-muted: #2a2f3a;
+  --color-text: #eaf6fb;
+  --color-text-muted: #7be0ff;
+  --color-accent: #1ee6ff;
+  --color-accent-2: #ffe066;
+  --color-success: #00ff99;
+  --color-danger: #ff4d4d;
+  --color-warning: #ffe066;
+  --color-info: #1ee6ff;
+  --color-disabled: #3a3f4a;
+  --font-main: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  --font-mono: 'Fira Mono', 'Consolas', monospace;
+  --border-radius: 8px;
+  --transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+[data-theme='dark'] {
+  --color-bg: #10141a;
+  --color-bg-panel: #181f29;
+  --color-border: #1ee6ff;
+  --color-text: #eaf6fb;
+  --color-text-muted: #7be0ff;
+  --color-accent: #1ee6ff;
+}
+
+[data-theme='light'] {
+  --color-bg: #f7fafc;
+  --color-bg-panel: #eaf6fb;
+  --color-border: #1ee6ff;
+  --color-text: #10141a;
+  --color-text-muted: #1e3a4c;
+  --color-accent: #1ee6ff;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  transition: background var(--transition), color var(--transition);
+}
+
+/* === theme.css ===
+ * Updated: 2025-06-14
+ * Summary: CSS variables for dark/light themes, used globally
+ * Key Components: N/A
+ * Dependencies: None
+ * Version History:
+ *   v1.0 - Initial release
+ * Notes: Extend for more variables as needed
+ */

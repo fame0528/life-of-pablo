@@ -1,0 +1,76 @@
+/* === App.css ===
+ * Created: 2025-06-14
+ * Purpose: Layout and global styles for modular app structure
+ * Key Exports: N/A (CSS only)
+ * Interactions: Used by App.tsx
+ * Notes: Uses CSS variables for theming
+ */
+
+html, body, #root {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing: border-box;
+  background: var(--color-bg);
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  background: var(--color-bg-panel);
+  border-right: 2px solid var(--color-border);
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  min-height: 100vh;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* Remove Vite/React boilerplate styles */
+.logo, .card, .read-the-docs, h1 {
+  display: none !important;
+}
+
+/* === App.css ===
+ * Updated: 2025-06-14
+ * Summary: Layout and global styles for modular app
+ * Key Components: N/A
+ * Dependencies: theme.css
+ * Version History:
+ *   v1.1 - Pixel-perfect full-screen and sidebar match
+ * Notes: Adjusted for exact screenshot match
+ */
